@@ -1,0 +1,21 @@
+{
+  "name": "chasStorage",
+  "version": "0.1.0",
+  "main": "chasStorage.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andris9/simpleStorage.git"
+  },
+  "bus": {
+    "url": "https://github.com/andris9/simpleStorage/issues"
+  },
+  "keywords": [
+    "localStorage",
+    "JSON"
+  ],
+  "author": "Sergey Naumov <drmgc@yandex.ru>",
+  "license": "Unlicense"
+}

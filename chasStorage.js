@@ -318,7 +318,7 @@
 	/**
 		Save states of DOM elements
 	*/
-	chasStorage.domData.save = function() {
+	chasStorage.domData.save = function(domElement) {
 		if (!chasStorage.available) {
 			return;
 		}
@@ -347,7 +347,7 @@
 			}
 		};
 
-		[].slice.call(document.querySelectorAll('*[' + chasStorage.domData.idAttribute + ']'), 0).map(hndl);
+		[].slice.call((domElement || document).querySelectorAll('*[' + chasStorage.domData.idAttribute + ']'), 0).map(hndl);
 
 		_sal.saveDomData(_domDataStorage);
 	};
@@ -356,7 +356,7 @@
 	/**
 		Load and store states of DOM elements
 	*/
-	chasStorage.domData.load = function() {
+	chasStorage.domData.load = function(domElement) {
 		if (!chasStorage.available) {
 			return;
 		}
@@ -384,7 +384,7 @@
 			}
 		};
 
-		[].slice.call(document.querySelectorAll('*[' + chasStorage.domData.idAttribute + ']'), 0).map(hndl);
+		[].slice.call((domElement || document).querySelectorAll('*[' + chasStorage.domData.idAttribute + ']'), 0).map(hndl);
 	};
 
 

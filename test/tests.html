@@ -3,12 +3,28 @@
 <head>
 	<meta charset="utf-8">
 	<title>chasStorage &mdash; QUnit testing</title>
-	<link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.11.0.css">
+	<link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.19.0.css">
 </head>
 <body>
 	<div id="qunit"></div>
 	<div id="qunit-fixture"></div>
-	<script src="http://code.jquery.com/qunit/qunit-1.11.0.js"></script>
+	<div id="domData" style="display:none">
+		<div id="domData-save">
+			<div style="display:none" data-chasstorage-id="save.visible"></div>
+			<input type="text" data-chasstorage-id="save.text" data-chasstorage-conf="value !*" value="foo bar baz">
+			<input type="text" data-chasstorage-id="save.text-et-visible" data-chasstorage-conf="value !checked" value="hi">
+			<input type="text" data-chasstorage-id="save.text-empty" data-chasstorage-conf="!*" value="not for saving">
+		</div>
+		<div id="domData-load">
+			<div id="load.visible" data-chasstorage-id="load.visible"></div>
+			<div id="load.visible-non" style="display:none" data-chasstorage-id="load.visible-non"></div>
+			<input id="load.text" type="text" data-chasstorage-id="load.text" data-chasstorage-conf="value !*">
+			<input id="load.text-et-visible" type="text" data-chasstorage-id="load.text-et-visible" data-chasstorage-conf="value !checked">
+			<input id="load.text-empty" type="text" data-chasstorage-id="load.text-empty" data-chasstorage-conf="!*">
+		</div>
+	</div>
+	<script src="http://code.jquery.com/qunit/qunit-1.19.0.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="../chasStorage.js"></script>
 	<script src="tests.js"></script>	
 </body>

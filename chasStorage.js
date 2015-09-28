@@ -342,8 +342,8 @@
 			if ('innerHtml' in el && conf.include.innerHtml) {
 				stor.innerHtml = el.innerHtml;
 			}
-			if (conf.include.visibility) {
-				stor.visible = (el.style.display == 'none');
+			if (conf.include.visible) {
+				stor.visible = (el.style.display != 'none');
 			}
 		};
 
@@ -379,7 +379,7 @@
 			if (stor.hasOwnProperty('innerHtml') && conf.include.innerHtml) {
 				el.innerHtml = stor.innerHtml;
 			}
-			if (stor.hasOwnProperty('visible') && conf.include.visibility && stor.visible) {
+			if (stor.hasOwnProperty('visible') && conf.include.visible && !stor.visible) {
 				el.style.display = 'none';
 			}
 		};

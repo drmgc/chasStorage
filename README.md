@@ -1,4 +1,4 @@
-# chasStorage
+# chasStorage [![npm version](https://badge.fury.io/js/chas-storage.svg)](https://www.npmjs.com/package/chas-storage) ![license](https://img.shields.io/npm/l/chas-storage.svg)
 
 Cross-browser key-value store database.
 

@@ -8,6 +8,11 @@ Cross-browser key-value store database.
 
 Download [chasStorage.js](https://github.com/DrMGC/chasStorage/blob/master/chasStorage.js)
 
+Or install via npm:
+```
+npm install chas-storage
+```
+
 ## Usage (basic API)
 **Attention:** *You must call `chasStorage.load()` manually!*
 

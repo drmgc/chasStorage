@@ -7,10 +7,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/andris9/simpleStorage.git"
+    "url": "https://github.com/drmgc/chasStorage.git"
   },
   "bus": {
-    "url": "https://github.com/andris9/simpleStorage/issues"
+    "url": "https://github.com/drmgc/chasStorage/issues"
   },
   "keywords": [
     "localStorage",

@@ -308,7 +308,7 @@
 			include: {
 				value: isIncluded('value'),
 				checked: isIncluded('checked'),
-				innerHtml: isIncluded('innerHtml'),
+				innerHTML: isIncluded('innerHtml'),
 				visible: isIncluded('visible'),
 			}
 		};
@@ -339,8 +339,8 @@
 			if ('checked' in el && conf.include.checked) {
 				stor.checked = el.checked;
 			}
-			if ('innerHtml' in el && conf.include.innerHtml) {
-				stor.innerHtml = el.innerHtml;
+			if ('innerHTML' in el && conf.include.innerHTML) {
+				stor.innerHTML = el.innerHTML;
 			}
 			if (conf.include.visible) {
 				stor.visible = (el.style.display != 'none');
@@ -376,8 +376,8 @@
 			if (stor.hasOwnProperty('checked') && conf.include.checked) {
 				el.checked = stor.checked;
 			}
-			if (stor.hasOwnProperty('innerHtml') && conf.include.innerHtml) {
-				el.innerHtml = stor.innerHtml;
+			if (stor.hasOwnProperty('innerHTML') && conf.include.innerHTML) {
+				el.innerHTML = stor.innerHTML;
 			}
 			if (stor.hasOwnProperty('visible') && conf.include.visible && !stor.visible) {
 				el.style.display = 'none';
